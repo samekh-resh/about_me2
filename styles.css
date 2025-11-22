@@ -67,3 +67,22 @@ body {
 
 /* next we gotta do the about me section */
 
+/* ABOUT SECTION */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+}
+
