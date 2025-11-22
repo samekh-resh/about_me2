@@ -11,3 +11,42 @@ body {
     background-color: #fafafa;
     color: #222;
 }
+
+
+/* MAIN PAGE WRAPPER */
+.main-page {
+    display: flex;
+    /*  make it all vertical*/
+    flex-direction: column;
+    /* honestly, I wanted to experiment with this */
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.nav {
+    /* make it a flex box */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    /* take off thoase tacky bulletins */
+    list-style: none;
+    /* get them all in a line */
+    display: flex;
+    /* nice clean spacing but i should be careful, not ever browser uses gap yet */
+    gap: 2rem;
+}
+
+.nav-item {
+    /* found out about this cute property that changes the cursor, wanted to add that in there for user experience? same with font-bold, playing around with stylign that I see on other websites along with the text transform (experimentation with that) */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
