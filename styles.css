@@ -1,4 +1,12 @@
 /* GLOBAL RESET */
+:root {
+    --color-bg: #fafafa;
+    --color-text: #222;
+    --color-border: #ddd;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +16,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
-    color: #222;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 
@@ -24,8 +32,8 @@ body {
 
 /* HEADER */
 .header {
-    background: #000;
-    color: #fff;
+    background: var(--color-black);
+    color: var(--color-white);
     padding: 20px;
 }
 
@@ -77,6 +85,7 @@ body {
 
 .about-image {
     width: 250px;
+    /* I wanted to experiment with this a bit more, I saw that it was utilized to allow the viewport to decide the height so that the content can be showed correctly. */
     height: auto;
     border-radius: 10px;
 }
@@ -85,4 +94,56 @@ body {
     max-width: 600px;
     text-align: center;
 }
+
+/* WORK COMING SECTION */
+.work-coming {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work-coming h3 {
+    text-align: center;
+}
+
+.work-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.individual-work-box {
+    width: 280px;
+    padding: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.individual-work-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+.footer-div {
+    /* centers the p tag inside the div but doesn't affect that styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000;
+    color: var(--color-white);
+
+    padding: 20px;
+
+}
+
+
 
